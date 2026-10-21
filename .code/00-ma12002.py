@@ -13,6 +13,6 @@ ipytest.autoconfig(raise_on_error=True)
 
 def run_tests():
     """"Run ipytest on all tests in the current notebook"""
-    ipytest.run(
+    return ipytest.run(
         "-v", module=__import__("__main__")
     )
