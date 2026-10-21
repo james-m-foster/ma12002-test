@@ -9,11 +9,8 @@ sys.path.insert(0, os.path.expanduser("~") + "/ma12002/.code/")
 # Make ipytest available
 import ipytest
 
-
 def run_tests():
-    """Run ipytest on all tests in the current notebook"""
-    return ipytest.main(
-        args=[
-            "-v"
-        ])
-    
+    """"Run ipytest on all tests in the current notebook"""
+    ipytest.run(
+        "-v",
+    )
