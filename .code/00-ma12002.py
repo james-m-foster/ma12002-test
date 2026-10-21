@@ -12,8 +12,4 @@ import ipytest
 
 def run_tests():
     """Run ipytest on all tests in the current notebook"""
-    ipytest.main(
-        args=[
-            "-v",
-        ]
-    )
+    ipytest.main("-v")
