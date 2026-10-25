@@ -22,7 +22,7 @@ def run_tests_pytest():
         ]
     )
 
-def run_tests_ipytest():
+def run_tests():
     """"Run ipytest on all tests in the current notebook"""
     ipytest.run(
         "-v", module=__import__("__main__")
